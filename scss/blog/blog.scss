@@ -1,0 +1,84 @@
+.blog{
+    max-width: 980px;
+    min-height: 1095.5px;
+    margin: 55.5px auto 0 auto;
+    .title{
+        margin-bottom: 35.5px;
+        h3{
+            font-family: Proxima;
+            font-weight: lighter;
+            font-size: 30px;
+            letter-spacing: 2px;
+            // border-bottom: 2px solid black;
+        }
+        hr{
+          width: 106px;
+          height: 3px;
+          background-color: black;
+          margin-top: -10px;
+        }
+    }
+    .blog-entry{
+        // background-color: chocolate;
+        width: 100%;
+        margin-bottom: 100px;
+        display: flex;
+        .date-icon{
+            width: 60px;
+            height: 60px;
+            background-color: $site-blue;
+            text-align: center;
+            color: $white;
+            padding: 8px;
+            margin-right: 20px;
+            h4{
+                font-family: Gill-Bold;
+                font-size: 22px;
+                font-weight: lighter;
+                margin: 0;
+            }
+            p{
+                font-family: Gill-Light;
+                font-size: 12px
+            }
+        }
+        .blog-content{
+            width: 100%;
+            .img-container{
+                max-width: 900px;
+                height: 259px;
+                // background-color: cadetblue;
+                background-image: url(../images/blog.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .text-container{
+                width: 380px;
+                margin-top: 20px;
+                h3{
+                    font-weight: lighter;
+                    font-family: Gill;
+                    font-size: 15px;
+                    color: black;
+                }
+                p{
+                    font-family: Gill;
+                    font-size: 13px;
+                    color: $site-blue;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:820px) {
+    .blog{
+        padding: 20px;
+        .blog-entry{
+            flex-direction: column;
+            .date-icon{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

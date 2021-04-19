@@ -1,0 +1,95 @@
+.booking-form{
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 890px;
+    // background-color: cadetblue;
+
+    .title{
+        font-family: Proxima;
+        font-size: $proxima-title;
+    }
+    
+    .booking-container{
+        // background-color: aquamarine;
+        max-width: 818px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .row{
+            display: flex;
+            // flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-family: Gill;
+            .item{
+                height: 58px;
+                border: 2px solid $site-blue;
+            }
+            .spacer{
+                margin-right: 5%;
+            }
+            .shorter{
+                flex-grow: 2;
+            }
+            .longer{
+                flex-grow: 3;
+            }
+            .timeframe{
+                width: 698px;
+            }
+            
+
+            p{
+                margin: auto 0;
+            }
+
+            select{
+                width: 103px;
+            }
+
+            textarea{
+                width: 818px;
+                height: 192px;
+            }
+            
+            button{
+                margin: 0 auto;
+                width: 813px;
+                height: 60.59px;
+                border: none;
+                border-radius: 50px;
+                background-color: $site-blue;
+                color: $white;
+                
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .booking-form{
+        .booking-container{
+            width: 600px;
+            .flexible{
+                flex-direction: column;
+                .longer{
+                    width: 100%;
+                }
+                .shorter{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+            .row{
+                .item{
+                    width: 100%;
+                }
+                p{
+                    padding:0 2%;
+                }
+            }
+        }
+    }
+ }

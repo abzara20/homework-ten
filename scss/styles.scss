@@ -1,0 +1,32 @@
+@import "variables.scss";
+@import "structure.scss";
+@import "mixins.scss";
+//home assets
+@import "home/hero.scss";
+@import "home/nav.scss";
+@import "home/promo-tours.scss";
+@import "form/booking-form.scss";
+@import "footer/footer.scss";
+
+//other pages linked here
+@import "about.scss";
+@import "tour.scss";
+@import "tour-backgrounds.scss";
+
+@import "special-offers/special-offers.scss";
+@import "contact/contact.scss";
+@import "form/contact-form.scss";
+@import "blog/blog.scss";
+//pages of the individual tours
+//template for tour packages
+@import "tours/template-tour.scss";
+//background images
+@import "tours/israel-tour.scss";
+@import "tours/usa-tour.scss";
+@import "tours/australia-tour.scss";
+@import "tours/zealand-tour.scss";
+@import "tours/france-tour.scss";
+@import "tours/egypt-tour.scss";
+@import "tours/japan-tour.scss";
+@import "tours/canada-tour.scss";
+@import "tours/uae-tour.scss";

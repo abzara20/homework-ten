@@ -1,0 +1,38 @@
+footer {
+    max-width: 1280px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: $site-blue;
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+        margin: auto;
+        width: 92px;
+        height: 42px;
+        // background-color: cyan;
+        background-image: url(../images/logo/logo-white.png);
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+
+    p{
+        margin: auto;
+        font-size: 12;
+        font-family: Gill;
+        color: $white;
+    }
+    .media{
+        margin: auto;
+        width: 115px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    footer{
+        justify-content: center;
+        width: 600px;
+    }
+ }

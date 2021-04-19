@@ -1,0 +1,105 @@
+.about{
+    max-width: 980px;
+    // background-color: aquamarine;
+    margin: 0 auto;
+    .about-top-section{
+        margin-top: 123px;
+      h1{
+          font-family: Proxima;
+          font-size: $proxima-title;
+          font-weight: lighter;
+      }
+
+      hr{
+          width: 171px;
+          height: 3px;
+          background-color: black;
+      }
+
+      p{
+        font-family: Gill;
+        font-size: 16px;
+        }
+    }
+    .about-bottom-section{
+        margin-top: 200px;
+        margin-bottom: 179px;
+        // display: flex;
+        // flex-direction: column;
+        h3{
+            font-family: Proxima;
+            font-size: 40px;
+            font-weight: lighter;
+        }
+
+        p{
+            font-family: Gill-Italic;
+            font-size: 16px;
+            }
+            
+         hr{
+             margin-top: -10px;
+            width: 255px;
+            height: 3px;
+            background-color: black;
+        }
+
+        .client{
+            display: flex;
+            max-width: 676px;
+            min-height: 150px;
+            margin-top: 36.5px;
+            
+            .client-image{
+                width: 260px;
+                height: 150px;
+                background-color: bisque;
+                img{
+                    width: 100%;
+                }
+            }
+
+            #client-1{
+                background-image: url(../images/about-client-01.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            #client-2{
+                background-image: url(../images/about-client-02.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .client-quote{
+                position: relative;
+                // background-color: blue;
+                min-height: 50px;
+                width: 100%;
+                padding-left: 25px;
+
+                // p:last-of-type {
+                //     margin-bottom: 55px;
+                // }
+
+                .client-name{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    p{
+                        font-family: Proxima;
+                        font-size: 20px;
+                        color: $site-blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .about{
+        padding: 10px;
+    }
+}

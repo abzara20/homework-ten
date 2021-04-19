@@ -1,0 +1,49 @@
+.hero{
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 500px;
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .heading{
+        align-items: center;
+        margin: 0 auto 40px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        h1{
+            font-family: Proxima;
+            font-size: $proxima-title;
+        }
+
+        p{
+            font-family: Gill-Italic;
+            font-size: 20px;
+        }
+
+        button{
+            margin-top: 30px;
+            background-color: $site-blue;
+            color: $white;
+            border: none;
+            width: 121.62px;
+            height:40.04px;
+        }
+        
+        // justify-self: center;
+        color: $white;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .hero{
+        width: 100%;
+    }
+}
